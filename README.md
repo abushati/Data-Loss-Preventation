@@ -1,18 +1,18 @@
 # Data-Loss-Preventation
 
-This is a Data Loss Preventation system user Django Rest Framework and Slack's API to retrieve messages posted in the home-assignment channal.
+This is a Data Loss Preventation system using Django Rest Framework and Slack's API to retrieve messages posted in the home-assignment channal.
 
 # Set up steps
 
-1) Clone the this repo to any folder
+1) Clone this repo to any folder
 
-2) Go into the folder that container the docker-compose.yml file. Docker version 3 is used!
+2) Go into the folder that contains the docker-compose.yml file. Docker version 3 is used!
 
 3) Run docker-compose up -d. Running in detach mode is necessary for the next step
 
 4) In order for our server to retrieve Event Subscriptions from Slack, the request url needs to be a public url. Ngrok is used to tunnel our localhost to a randomly generated url. When the containers are successfully running, run the command curl $(docker port ngrok 4040)/api/tunnels.
 
-5) Find the key:value as followed "public_url":"http://3a03c35f.ngrok.io".
+5) Find the key:value as followed "public_url":"http://3a03c35f.ngrok.io" in the command output.
 
 6) Go to the Data Loss Prevention App on the Slack platform and go to Event Subscriptions tab (under features)
 
@@ -20,9 +20,9 @@ This is a Data Loss Preventation system user Django Rest Framework and Slack's A
 
 8) When the handshake is successfully complete, restall the app and post to the home-assignment channel.
 
-9) The gain access to the admin page, use the default credentials, Username:root,Password:password,
+9) To gain access to the django admin page, use the default credentials, Username:root,Password:password,
 
-10) To regex pattern to be searched for, go to the RegexCombs table and add the pattern
+10) To add regex pattern to be used, go to the RegexCombs table and add the pattern
 
 11) To view all the message that have been blocked by the patterns provided, go to the Incident logs table.
 
