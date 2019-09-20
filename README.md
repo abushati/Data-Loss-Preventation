@@ -2,7 +2,7 @@
 
 This is a Data Loss Preventation system user Django Rest Framework and Slack's API to retrieve messages posted in the home-assignment channal.
 
-# Set up sets
+# Set up steps
 
 1) Clone the this repo to any folder
 
