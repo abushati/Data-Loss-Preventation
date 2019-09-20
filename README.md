@@ -12,9 +12,19 @@ This is a Data Loss Preventation system user Django Rest Framework and Slack's A
 
 4) In order for our server to retrieve Event Subscriptions from Slack, the request url needs to be a public url. Ngrok is used to tunnel our localhost to a randomly generated url. When the containers are successfully running, run the command curl $(docker port ngrok 4040)/api/tunnels.
 
-5)Find the key:value as followed "public_url":"http://3a03c35f.ngrok.io".
+5) Find the key:value as followed "public_url":"http://3a03c35f.ngrok.io".
 
 6) Go to the Data Loss Prevention App on the Slack platform and go to Event Subscriptions tab (under features)
 
 7) In the Request URL input the url you found in step 5 http://3a03c35f.ngrok.io and add the subdirectory /DSL/. The full url should be http://3a03c35f.ngrok.io/DSL/
 
+8) When the handshake is successfully complete, restall the app and post to the home-assignment channel.
+
+9) The gain access to the admin page, use the default credentials, Username:root,Password:password,
+
+10) To regex pattern to be searched for, go to the RegexCombs table and add the pattern
+
+11) To view all the message that have been blocked by the patterns provided, go to the Incident logs table.
+
+
+Slack Link to join work space- https://join.slack.com/t/avananassignment/shared_invite/enQtNzY0Nzk3NDk1MTczLTcwYWVhYjUyZTE4MzQzYTI3ZWM2ZjFmYTg0MTUzZmNlZjNlMjkwZTU3MzdhNzc1NTA3YWIyZTAzMjkxYTcxOGQ
