@@ -1,0 +1,9 @@
+FROM python:3.6
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /my_app_dir
+WORKDIR /my_app_dir
+ADD requirements.txt /my_app_dir/
+RUN pip install -r requirements.txt
+RUN pip install mysqlclient
+RUN pip install django-mysql
+ADD . /my_app_dir/
